@@ -11,6 +11,5 @@ RUN mvn clean install
 
 # This will run the JAR file
 FROM maven
-WORKDIR /usr/app
 ENTRYPOINT ["java","-jar","/usr/app/target/heroku-demo-0.0.1-SNAPSHOT.jar"]
 
